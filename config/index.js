@@ -1,7 +1,7 @@
 const { resolve } = require('path');
 
 // 默认端口号
-const port = process.env.npm_config_port;
+const port = process.env.npm_config_port || 3000;
 // 默认域名
 const domain = 'http://localhost';
 // 默认标题
@@ -40,10 +40,16 @@ const innerDir = {
   jsDir: resolve(__dirname, '../temp_files/js'),
 };
 
+const regexp = {
+  // 匹配ul menu-list内部的内容
+  reg_ulContent: /<ul class=\"menu-list\">([\s\S]*?)<\/ul>/,
+}
+
 module.exports = {
   port,
   domain,
   title,
   outerPath,
-  innerDir
+  innerDir,
+  regexp
 }
