@@ -1,0 +1,24 @@
+{
+  "name": "vite-doc-creator",
+  "version": "0.1.0",
+  "description": "文档生成工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bohecola/vite-doc-creator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bohecola/vite-doc-creator/issues"
+  },
+  "homepage": "https://github.com/bohecola/vite-doc-creator#readme",
+  "dependencies": {
+    "highlight.js": "^11.5.1",
+    "marked": "^4.0.16"
+  }
+}
