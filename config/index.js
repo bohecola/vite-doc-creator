@@ -43,7 +43,13 @@ const innerDir = {
 const regexp = {
   // 匹配ul menu-list内部的内容
   reg_ulContent: /<ul class=\"menu-list\">([\s\S]*?)<\/ul>/,
-}
+  // 匹配title中的内容
+  reg_titleContent: /<title>([\s\S]*?)<\/title>/,
+  // 匹配header-title中的内容
+  reg_headerTitleContent: /<h1 class=\"header-title\">([\s\S]*?)<\/h1>/,
+  // 匹配iframe page中的内容
+  reg_iframeContent: /<div class=\"iframe-page\">([\s\S]*?)<\/div>/
+};
 
 module.exports = {
   port,

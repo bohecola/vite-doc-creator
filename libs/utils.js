@@ -15,7 +15,14 @@ function createMenuItem (filename, userDomain, userPort, isActive) {
     <li class="menu-item ${ isActive ? 'active' : '' }">
       <a href="${_formatBaseUrl(userDomain, userPort)}/src/html/${filename}" target="myFrame">${filename.replace('.html', '')}</a>
     </li>
-  `
+  `;
+}
+
+// 创建iframe
+function createIframe (filename, userDomain, userPort) {
+  return `
+    <iframe src="${_formatBaseUrl(userDomain, userPort)}/src/html/${filename}" name="myFrame"></iframe>
+  `;
 }
 
 // 组合baseUrl
@@ -42,5 +49,6 @@ function replaceHtml (regexp, html, content) {
 module.exports = {
   readFile,
   createMenuItem,
-  replaceHtml
+  replaceHtml,
+  createIframe
 }
