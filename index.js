@@ -11,8 +11,6 @@ const {
   }
 } = require('./config');
 
-const { mdToHtml } = require('./compiler');
-
 class ViteDocCreator {
   constructor(options) {
     this.options = {
@@ -39,8 +37,6 @@ class ViteDocCreator {
     initFiles(this.options);
     // 初始化监听html与markdown文件及文件夹变化
     initWatchers(this.options);
-
-    mdToHtml('guide.md')
   }
 }
 
