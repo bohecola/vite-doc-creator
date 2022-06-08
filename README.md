@@ -23,7 +23,7 @@ mkdir project-name
 ```
 npm init -y
 ```
-3. 安装[vite](https://github.com/vitejs/vite)。 作者：[尤雨溪](https://github.com/yyx990803)
+3. 安装[vite](https://github.com/vitejs/vite)
 ```
 npm i vite -D
 ```
@@ -34,7 +34,7 @@ npm i vite -D
   "build": "vite build"
 }
 ```
-5. 安装[vite-doc-creator](https://github.com/xiaoyesensen/vite-doc-creator)。作者：[小野森森](https://github.com/xiaoyesensen)
+5. 安装[vite-doc-creator](https://github.com/bohecola/vite-doc-creator)
 ```
 npm i vite-doc-creator -D
 ```
